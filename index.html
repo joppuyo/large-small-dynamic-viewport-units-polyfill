@@ -36,6 +36,16 @@
             bottom: 0;
         }
 
+        .fixed {
+            position: fixed;
+            height: 100%;
+            width: 80px;
+            background-color: pink;
+            right: 0;
+            top: 0;
+            bottom: 0;
+        }
+
         .svh {
             width: 40px;
             height: 100vh;
@@ -93,6 +103,23 @@
 
                 absolute.remove();
 
+                var fixed = document.createElement("div");
+                fixed.style.width = '1px';
+                fixed.style.height = '100%';
+                fixed.style.position = 'absolute'
+                fixed.style.left = '0';
+                fixed.style.top = '0';
+                fixed.style.bottom = '0';
+                fixed.style.visibility = 'hidden';
+
+                body.appendChild(fixed);
+
+                var fixedHeight = fixed.clientHeight;
+
+                document.getElementById('fixedheight').innerText = fixedHeight;
+
+                fixed.remove();
+
 
 
             }
@@ -116,6 +143,7 @@
     <div>document.documentElement.clientHeight: <span id="clientheight"></span></div>
     <div>100vh: <span id="hundredvh"></span></div>
     <div>absolute: <span id="absoluteheight"></span></div>
+    <div>fixed: <span id="fixedheight"></span></div>
 </div>
 
 <div class="wrapper">
@@ -123,9 +151,9 @@
     <div class="cvh"></div>
 </div>
 
+
+<div class="fixed"></div>
 <div class="absolute"></div>
-
-
 
 </body>
 </html>
