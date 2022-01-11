@@ -1,6 +1,6 @@
 # Large, small, and dynamic viewport units polyfill
 
-This is a "polyfill" which adds support for svh and cvh dynamic viewport units. It's mainly useful when dealing with iOS and Android mobile devices.
+This is a "polyfill" which adds support for svh, dvh and lvh viewport units. It's mainly useful when dealing with iOS and Android mobile devices.
 
 ## How it works
 
@@ -37,7 +37,7 @@ Add the following CSS:
 
 Note: lvh unit is only included for the sake of completeness. It currently behaves exactly like vh unit. This may break in a future version of iOS or Android.
 
-## Compatiblity
+## Compatibility
 
 I've tested this with the following operating systems:
 
