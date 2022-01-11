@@ -2,7 +2,7 @@ var setVh = function () {
     var svh = document.documentElement.clientHeight * 0.01;
     document.documentElement.style.setProperty('--1svh', (svh + "px"));
     var cvh = window.innerHeight * 0.01;
-    document.documentElement.style.setProperty('--1cvh', (cvh + "px"));
+    document.documentElement.style.setProperty('--1dvh', (cvh + "px"));
 
     if (document.body) {
         var fixed = document.createElement("div");
