@@ -65,13 +65,15 @@ Note: lvh unit is only included for the sake of completeness. It currently behav
 
 I've tested this with the following operating systems:
 
-* iOS 15
+* iOS 15 on iPhone 12 Pro
 * Android X with Chrome Y
 
 ## Todo
 
 * Test with Android
 * Test with iPad
+* Add some automated tests
+* Figure out how to run automated tests on mobile devices (preferably on the cheap)
 * Add some feature detection to run the code only on devices without native support
 
 ## Further reading
