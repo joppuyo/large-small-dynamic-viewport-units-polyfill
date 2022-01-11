@@ -7,7 +7,7 @@ var setVh = function () {
     if (document.body) {
         var fixed = document.createElement("div");
         fixed.style.width = '1px';
-        fixed.style.height = '100%';
+        fixed.style.height = '100vh';
         fixed.style.position = 'fixed'
         fixed.style.left = '0';
         fixed.style.top = '0';
