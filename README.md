@@ -63,7 +63,7 @@ Note: lvh unit is only included for the sake of completeness. It currently behav
 
 ## Compatibility
 
-I've tested this with the following operating systems:
+I've tested this with the following operating systems and devices: 
 
 * iOS 15 on iPhone 12 Pro
 * Android X with Chrome Y
