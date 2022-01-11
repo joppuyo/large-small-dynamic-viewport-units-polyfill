@@ -1,0 +1,29 @@
+{
+  "name": "svh-dvh-polyfill",
+  "version": "1.0.0",
+  "description": "Polyfill for svh and cvh CSS dynamic viewport units",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joppuyo/svh-dvh-polyfill.git"
+  },
+  "keywords": [
+    "mobile",
+    "safari",
+    "android",
+    "chrome",
+    "viewport",
+    "units",
+    "wh",
+    "100vh"
+  ],
+  "author": "Johannes Siipola",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/joppuyo/svh-dvh-polyfill/issues"
+  },
+  "homepage": "https://github.com/joppuyo/svh-dvh-polyfill#readme"
+}
