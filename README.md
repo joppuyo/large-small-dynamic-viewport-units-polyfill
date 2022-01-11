@@ -68,6 +68,12 @@ I've tested this with the following operating systems:
 * iOS 15
 * Android X with Chrome Y
 
+## Todo
+
+* Test with Android
+* Test with iPad
+* Add some feature detection to run the code only on devices without native support
+
 ## Further reading
 
 * [The Large, Small, and Dynamic Viewports – Bram.us](https://www.bram.us/2021/07/08/the-large-small-and-dynamic-viewports/)
