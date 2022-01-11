@@ -22,7 +22,7 @@ var setVh = function () {
 
         var dvh = fixedHeight * 0.01;
 
-        document.documentElement.style.setProperty('--1dvh', (dvh + "px"));
+        document.documentElement.style.setProperty('--1lvh', (dvh + "px"));
     }
 };
 

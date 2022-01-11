@@ -1,7 +1,7 @@
 {
-  "name": "svh-dvh-polyfill",
+  "name": "large-small-dynamic-viewport-units-polyfill",
   "version": "1.0.0",
-  "description": "Polyfill for svh and cvh CSS dynamic viewport units",
+  "description": "Polyfill for svh, dvh and lvh CSS viewport units",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -17,7 +17,7 @@
     "chrome",
     "viewport",
     "units",
-    "wh",
+    "vh",
     "100vh"
   ],
   "author": "Johannes Siipola",
