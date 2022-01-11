@@ -1,0 +1,53 @@
+<!doctype html>
+
+<html>
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        html, body {
+            height: 2000px;
+        }
+
+        .box {
+            background-color: lightgray;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+
+    </style>
+
+    <script>
+
+        window.addEventListener('DOMContentLoaded', function () {
+            var calculate = function() {
+                var innerheight = window.innerHeight;
+                var clientheight = document.documentElement.clientHeight;
+                document.getElementById('innerheight').innerText = innerheight;
+                document.getElementById('clientheight').innerText = clientheight;
+            }
+
+            calculate();
+
+            setInterval(function () {
+                calculate();
+            }, 1000)
+        })
+
+    </script>
+
+</head>
+
+
+<body>
+
+<div class="box">
+    <div>window.innerHeight: <span id="innerheight"></span></div>
+    <div>document.documentElement.clientHeight: <span id="clientheight"></span></div>
+</div>
+
+</body>
+</html>
