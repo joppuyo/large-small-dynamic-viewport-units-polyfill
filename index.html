@@ -28,6 +28,20 @@
                 var clientheight = document.documentElement.clientHeight;
                 document.getElementById('innerheight').innerText = innerheight;
                 document.getElementById('clientheight').innerText = clientheight;
+
+                var element = document.createElement("div");
+                element.style.width = '1px';
+                element.style.height = '100vh';
+
+                var body = document.querySelector("body");
+                body.appendChild(element);
+
+                vhheight = element.clientHeight;
+
+                document.getElementById('hundredvh').innerText = vhheight;
+
+                element.remove();
+
             }
 
             calculate();
@@ -47,6 +61,7 @@
 <div class="box">
     <div>window.innerHeight: <span id="innerheight"></span></div>
     <div>document.documentElement.clientHeight: <span id="clientheight"></span></div>
+    <div>100vh: <span id="hundredvh"></span></div>
 </div>
 
 </body>
