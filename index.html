@@ -4,7 +4,11 @@
 
 <head>
 
+    <script src="./index.js"></script>
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css">
 
     <style>
         html, body {
@@ -14,8 +18,25 @@
         .box {
             background-color: lightgray;
             position: fixed;
-            top: 0;
-            left: 0;
+            top: 10px;
+            left: 10px;
+        }
+
+        .wrapper {
+            display: flex;
+        }
+
+        .svh {
+            width: 40px;
+            height: 100vh;
+            height: calc(var(--1svh, 1vh) * 100);
+            background-color: red;
+        }
+        .cvh {
+            width: 40px;
+            height: 100vh;
+            height: calc(var(--1cvh, 1vh) * 100);
+            background-color: blue;
         }
 
     </style>
@@ -32,6 +53,7 @@
                 var element = document.createElement("div");
                 element.style.width = '1px';
                 element.style.height = '100vh';
+                element.style.visibility = 'hidden';
 
                 var body = document.querySelector("body");
                 body.appendChild(element);
@@ -63,6 +85,13 @@
     <div>document.documentElement.clientHeight: <span id="clientheight"></span></div>
     <div>100vh: <span id="hundredvh"></span></div>
 </div>
+
+<div class="wrapper">
+    <div class="svh"></div>
+    <div class="cvh"></div>
+</div>
+
+
 
 </body>
 </html>
