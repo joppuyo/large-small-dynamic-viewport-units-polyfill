@@ -8,7 +8,31 @@ It adds CSS variables `--1svh`, `--1dvh` and `--1lvh` using JavaScript. These co
 
 ## How to use
 
+### Import script
+
 Include script tag or import the script using a bundler.
+
+#### Script tag
+
+```html
+<script src="https://unpkg.com/large-small-dynamic-viewport-units-polyfill@0.0.1/dist/large-small-dynamic-viewport-units-polyfill.min.js"></script>
+```
+
+#### Bundler
+
+Install the package.
+
+```shell
+npm install large-small-dynamic-viewport-units-polyfill
+```
+
+Import the package.
+
+```js
+import 'large-small-dynamic-viewport-units-polyfill';
+```
+
+### Write CSS
 
 Add the following CSS:
 
