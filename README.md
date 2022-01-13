@@ -4,6 +4,8 @@
 
 This is a "polyfill" which adds support for svh, dvh and lvh viewport units. It's mainly useful when dealing with iOS and Android mobile devices.
 
+⚠️ **This library is pre-release quality. It should work but it requires more comprehensive testing on different devices. Please test it out and report any bugs you encounter.**
+
 ## How it works
 
 It adds CSS custom properties (variables) `--1svh`, `--1dvh` and `--1lvh` using JavaScript. These correspond to 1 svh, 1 dvh and 1lvh unit respectively. You can use CSS `calc()` function to multiply them to your desired size.
@@ -61,7 +63,7 @@ Add the following CSS:
 }
 ```
 
-Note: lvh unit is only included for the sake of completeness. It currently behaves exactly like vh unit. This may break in a future version of iOS or Android.
+ℹ️ **lvh unit is only included for the sake of completeness. It currently behaves exactly like vh unit. This may break in a future version of iOS or Android.**
 
 ## Compatibility
 
