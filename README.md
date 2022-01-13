@@ -19,7 +19,7 @@ Include script tag or import the script using a bundler.
 #### 1.A. Script tag
 
 ```html
-<script src="https://unpkg.com/large-small-dynamic-viewport-units-polyfill@0.0.1/dist/large-small-dynamic-viewport-units-polyfill.min.js"></script>
+<script src="https://unpkg.com/large-small-dynamic-viewport-units-polyfill@0.0.2/dist/large-small-dynamic-viewport-units-polyfill.min.js"></script>
 ```
 
 #### 1.B. Bundler
