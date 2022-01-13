@@ -65,7 +65,7 @@ Note: lvh unit is only included for the sake of completeness. It currently behav
 
 ## Compatibility
 
-I've tested this with the following operating systems and devices: 
+I've tested this library with the following operating systems and devices: 
 
 * Mobile Safari, iOS 15, iPhone 12 Pro
 * Mobile Safari, iOS 15, iPad Pro 11" 2018
