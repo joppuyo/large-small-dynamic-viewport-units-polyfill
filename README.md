@@ -67,13 +67,15 @@ Note: lvh unit is only included for the sake of completeness. It currently behav
 
 I've tested this with the following operating systems and devices: 
 
-* iOS 15 on iPhone 12 Pro
+* Mobile Safari, iOS 15, iPhone 12 Pro
+* Mobile Safari, iOS 15, iPad Pro 11" 2018
+* Google Chrome 97, iOS 15, iPhone 12 Pro
+* Google Chrome 97, iOS 15, iPad Pro 11" 2018
 * Android X with Chrome Y
 
 ## Todo
 
 * Test with Android
-* Test with iPad
 * Add some automated tests
 * Figure out how to run automated tests on mobile devices (preferably on the cheap)
 * Add some feature detection to run the code only on devices without native support
@@ -82,3 +84,4 @@ I've tested this with the following operating systems and devices:
 
 * [The Large, Small, and Dynamic Viewports – Bram.us](https://www.bram.us/2021/07/08/the-large-small-and-dynamic-viewports/)
 * [The trick to viewport units on mobile – CSS-Tricks](https://css-tricks.com/the-trick-to-viewport-units-on-mobile/)
+* [New Viewport Units Introduced to Values and Units L4 – CSS WG Blog](https://www.w3.org/blog/CSS/2021/07/15/css-values-4-viewport-units/)
