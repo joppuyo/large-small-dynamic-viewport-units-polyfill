@@ -8,7 +8,7 @@ This is a "polyfill" which adds support for svh, dvh and lvh viewport units. It'
 
 ## How it works
 
-It adds CSS custom properties (variables) `--1svh`, `--1dvh` and `--1lvh` using JavaScript. These correspond to 1 svh, 1 dvh and 1lvh unit respectively. You can use CSS `calc()` function to multiply them to your desired size.
+It adds CSS custom properties (variables) `--1svh`, `--1dvh` and `--1lvh` using JavaScript. These correspond to 1 svh, 1 dvh and 1 lvh unit respectively. These custom properties are automatically updated when the viewport size changes. You can use CSS `calc()` function to multiply them to your desired size.
 
 ## How to use
 
