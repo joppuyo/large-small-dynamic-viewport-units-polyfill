@@ -4,7 +4,7 @@
 
 This is a "polyfill" which adds support for svh, dvh and lvh viewport units. It's mainly useful when dealing with iOS and Android mobile devices.
 
-⚠️ **This library is pre-release quality. It should work but it requires more comprehensive testing on different devices. Please test it out and report any bugs you encounter.**
+⚠️ **This library is pre-release quality. It should work but it requires more comprehensive testing on different devices. Please test it out and report any bugs you might encounter.**
 
 ## How it works
 
