@@ -73,11 +73,10 @@ I've tested this library with the following operating systems and devices:
 * Mobile Safari, iOS 15, iPad Pro 11" 2018
 * Google Chrome 97, iPadOS 15, iPhone 12 Pro
 * Google Chrome 97, iPadOS 15, iPad Pro 11" 2018
-* Android X with Chrome Y
+* Google Chrome 97, Android 8.1, Nexus 5X
 
 ## Todo
 
-* Test with Android
 * Add some automated tests
 * Figure out how to run automated tests on mobile devices (preferably on the cheap)
 * Add some feature detection to run the code only on devices without native support
