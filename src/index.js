@@ -1,8 +1,8 @@
 var setVh = function () {
     var svh = document.documentElement.clientHeight * 0.01;
     document.documentElement.style.setProperty('--1svh', (svh + "px"));
-    var cvh = window.innerHeight * 0.01;
-    document.documentElement.style.setProperty('--1dvh', (cvh + "px"));
+    var dvh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--1dvh', (dvh + "px"));
 
     if (document.body) {
         var fixed = document.createElement("div");
@@ -20,9 +20,9 @@ var setVh = function () {
 
         fixed.remove();
 
-        var dvh = fixedHeight * 0.01;
+        var lvh = fixedHeight * 0.01;
 
-        document.documentElement.style.setProperty('--1lvh', (dvh + "px"));
+        document.documentElement.style.setProperty('--1lvh', (lvh + "px"));
     }
 };
 
