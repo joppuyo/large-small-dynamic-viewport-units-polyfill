@@ -1,10 +1,12 @@
 # Large, small, and dynamic viewport units polyfill
 
+![npm](https://img.shields.io/npm/v/large-small-dynamic-viewport-units-polyfill)
+
 This is a "polyfill" which adds support for svh, dvh and lvh viewport units. It's mainly useful when dealing with iOS and Android mobile devices.
 
 ## How it works
 
-It adds CSS variables `--1svh`, `--1dvh` and `--1lvh` using JavaScript. These correspond to 1 svh, 1 dvh and 1lvh unit respectively. You can use CSS `calc()` function to multiply them to your desired size.
+It adds CSS custom properties (variables) `--1svh`, `--1dvh` and `--1lvh` using JavaScript. These correspond to 1 svh, 1 dvh and 1lvh unit respectively. You can use CSS `calc()` function to multiply them to your desired size.
 
 ## How to use
 
@@ -63,10 +65,18 @@ Note: lvh unit is only included for the sake of completeness. It currently behav
 
 ## Compatibility
 
-I've tested this with the following operating systems:
+I've tested this with the following operating systems and devices: 
 
-* iOS 15
+* iOS 15 on iPhone 12 Pro
 * Android X with Chrome Y
+
+## Todo
+
+* Test with Android
+* Test with iPad
+* Add some automated tests
+* Figure out how to run automated tests on mobile devices (preferably on the cheap)
+* Add some feature detection to run the code only on devices without native support
 
 ## Further reading
 
