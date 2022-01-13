@@ -12,17 +12,17 @@ It adds CSS custom properties (variables) `--1svh`, `--1dvh` and `--1lvh` using 
 
 ## How to use
 
-### Import script
+### 1. Import script
 
 Include script tag or import the script using a bundler.
 
-#### Script tag
+#### 1.A. Script tag
 
 ```html
 <script src="https://unpkg.com/large-small-dynamic-viewport-units-polyfill@0.0.1/dist/large-small-dynamic-viewport-units-polyfill.min.js"></script>
 ```
 
-#### Bundler
+#### 1.B. Bundler
 
 Install the package.
 
@@ -36,30 +36,30 @@ Import the package.
 import 'large-small-dynamic-viewport-units-polyfill';
 ```
 
-### Write CSS
+### 2. Write CSS
 
-Add the following CSS:
+Add CSS like this in your project:
 
 ```css
 .my-small-hero-element {
     width: 100%;
     height: 100vh; /* For browsers that don't support CSS variables */
     height: calc(var(--1svh, 1vh) * 100); /* This is the "polyfill" */
-    height: 100svh; /* This is for future browsers that support dynamic viewport units */
+    height: 100svh; /* This is for future browsers that support svh, dvh and lvh viewport units */
 }
 
 .my-dynamic-hero-element {
     width: 100%;
     height: 100vh; /* For browsers that don't support CSS variables */
     height: calc(var(--1dvh, 1vh) * 100); /* This is the "polyfill" */
-    height: 100dvh; /* This is for future browsers that support dynamic viewport units */
+    height: 100dvh; /* This is for future browsers that support svh, dvh and lvh viewport units */
 }
 
 .my-large-hero-element {
     width: 100%;
     height: 100vh; /* For browsers that don't support CSS variables */
     height: calc(var(--1lvh, 1vh) * 100); /* This is the "polyfill" */
-    height: 100lvh; /* This is for future browsers that support dynamic viewport units */
+    height: 100lvh; /* This is for future browsers that support svh, dvh and lvh viewport units */
 }
 ```
 
