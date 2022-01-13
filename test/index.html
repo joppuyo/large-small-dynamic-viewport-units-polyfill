@@ -1,0 +1,88 @@
+<!doctype html>
+
+<html>
+
+<head>
+
+    <script src="../src/index.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css">
+
+    <style>
+        html, body {
+            height: 2000px;
+            font-family: sans-serif;
+            font-size: 12px;
+        }
+
+        .box {
+            display: flex;
+        }
+
+        .hundredvh {
+            width: 75px;
+            height: 100vh;
+            background-color: #0097A7;
+            border-radius: 5px;
+            color: white;
+            padding: 5px;
+            border: 2px solid white;
+            font-weight: bold;
+        }
+
+        .svh {
+            width: 75px;
+            height: 100vh;
+            height: calc(var(--1svh, 1vh) * 100);
+            height: 100svh;
+            background-color: #7B1FA2;
+            border-radius: 5px;
+            color: white;
+            padding: 5px;
+            border: 2px solid white;
+            font-weight: bold;
+        }
+        .dvh {
+            width: 75px;
+            height: 100vh;
+            height: calc(var(--1dvh, 1vh) * 100);
+            height: 100dvh;
+            background-color: #FBC02D;
+            border-radius: 5px;
+            color: black;
+            padding: 5px;
+            border: 2px solid white;
+            font-weight: bold;
+        }
+        .lvh {
+            width: 75px;
+            height: 100vh;
+            height: calc(var(--1lvh, 1vh) * 100);
+            height: 100lvh;
+            background-color: black;
+            border-radius: 5px;
+            color: white;
+            padding: 5px;
+            border: 2px solid white;
+            font-weight: bold;
+        }
+
+
+    </style>
+
+</head>
+
+
+<body>
+
+<div class="box">
+    <div class="hundredvh">100vh reference</div>
+    <div class="svh">Small viewport.<br><br>When scrolled down, the height of this box shouldn't change</div>
+    <div class="dvh">Dynamic viewport.<br><br>When scrolled down, this box should become taller</div>
+    <div class="lvh">Large viewport.<br><br>When scrolled down, the height of this box shouldn't change</div>
+</div>
+
+</body>
+</html>
