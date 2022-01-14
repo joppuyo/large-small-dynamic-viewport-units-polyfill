@@ -1,6 +1,6 @@
 # Large, small, and dynamic viewport units polyfill
 
-![npm](https://img.shields.io/npm/v/large-small-dynamic-viewport-units-polyfill)
+[![npm](https://img.shields.io/npm/v/large-small-dynamic-viewport-units-polyfill)](https://www.npmjs.com/package/large-small-dynamic-viewport-units-polyfill)
 
 This is a "polyfill" which adds support for svh, dvh and lvh viewport units. It's mainly useful when dealing with iOS and Android mobile devices.
 
