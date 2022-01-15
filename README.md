@@ -71,6 +71,7 @@ I've tested this library with the following operating systems and devices:
 
 * Mobile Safari, iOS 15, iPhone 12 Pro
 * Mobile Safari, iOS 15, iPad Pro 11" 2018
+* Mobile Safari, iOS 14, iPhone SE (1st generation)
 * Google Chrome 97, iPadOS 15, iPhone 12 Pro
 * Google Chrome 97, iPadOS 15, iPad Pro 11" 2018
 * Google Chrome 97, Android 8.1, Nexus 5X
