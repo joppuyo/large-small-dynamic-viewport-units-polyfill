@@ -26,6 +26,13 @@ var setVh = function () {
     }
 };
 
+var isMobile = function() {
+    if(/Android|iPhone|iPad|iPod/i.test(navigator.userAgent) || (navigator.userAgent.match(/Mac/) && navigator.maxTouchPoints && navigator.maxTouchPoints > 2)) {
+        return true;
+    }
+    return false;
+}
+
 var initialize = function () {
     // SSR support
     if (typeof window === 'undefined') {
@@ -39,6 +46,11 @@ var initialize = function () {
         window.CSS.supports('height: 100dvh') &&
         window.CSS.supports('height: 100lvh')
     ) {
+        return;
+    }
+
+    // Don't run on desktop browsers
+    if (!isMobile) {
         return;
     }
 
