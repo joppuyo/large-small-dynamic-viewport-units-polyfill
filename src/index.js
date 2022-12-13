@@ -26,9 +26,31 @@ var setVh = function () {
     }
 };
 
+var isMobile = function() {
+    if(/Android|iPhone|iPad|iPod/i.test(navigator.userAgent) || (navigator.userAgent.match(/Mac/) && navigator.maxTouchPoints && navigator.maxTouchPoints > 2)) {
+        return true;
+    }
+    return false;
+}
+
 var initialize = function () {
     // SSR support
     if (typeof window === 'undefined') {
+        return;
+    }
+
+    // Don't run polyfill if browser supports the units natively
+    if ('CSS' in window &&
+        'supports' in window.CSS &&
+        window.CSS.supports('height: 100svh') &&
+        window.CSS.supports('height: 100dvh') &&
+        window.CSS.supports('height: 100lvh')
+    ) {
+        return;
+    }
+
+    // Don't run on desktop browsers
+    if (!isMobile) {
         return;
     }
 
