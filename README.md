@@ -80,7 +80,6 @@ I've tested this library with the following operating systems and devices:
 
 * Add some automated tests
 * Figure out how to run automated tests on mobile devices (preferably on the cheap)
-* Add some feature detection to run the code only on devices without native support
 
 ## Further reading
 

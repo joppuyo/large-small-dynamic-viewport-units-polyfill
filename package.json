@@ -1,6 +1,6 @@
 {
   "name": "large-small-dynamic-viewport-units-polyfill",
-  "version": "0.0.4",
+  "version": "0.1.0",
   "description": "Polyfill for svh, dvh and lvh CSS viewport units",
   "main": "src/index.js",
   "scripts": {
