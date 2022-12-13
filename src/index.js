@@ -32,6 +32,16 @@ var initialize = function () {
         return;
     }
 
+    // Don't run polyfill if browser supports the units natively
+    if ('CSS' in window &&
+        'supports' in window.CSS &&
+        window.CSS.supports('height: 100svh') &&
+        window.CSS.supports('height: 100dvh') &&
+        window.CSS.supports('height: 100lvh')
+    ) {
+        return;
+    }
+
     // We run the calculation as soon as possible (eg. the script is in document head)
     setVh();
 
