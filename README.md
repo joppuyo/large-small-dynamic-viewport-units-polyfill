@@ -63,6 +63,10 @@ Add CSS like this in your project:
 }
 ```
 
+You should include all three lines so your styles will work properly. Because browsers will simply ignore CSS properties with values they do not understand, new browsers that implement the units will use the last line.
+
+You may omit the first line if you don't need to support very old browsers like IE 11 (CSS custom properties are supported by 97% of browsers).
+
 ℹ️ **lvh unit is only included for the sake of completeness. It currently behaves exactly like vh unit. This may break in a future version of iOS or Android.**
 
 ## Compatibility
